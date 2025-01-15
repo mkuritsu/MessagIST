@@ -1,0 +1,13 @@
+[package]
+name = "test_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+protocol = { path = "../protocol" }
+cryptolib = { path = "../cryptolib" }
+client = { path = "../client" }
+tokio = { version = "1.42.0", features = ["full", "rt"] }
+rand = "0.8.5"
+anyhow = "1.0.94"
+base64 = "0.22.1"

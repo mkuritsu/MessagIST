@@ -1,0 +1,11 @@
+[package]
+name = "cryptolib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cipher = { version = "0.4.4", features = ["rand_core"] }
+rand = "0.8"
+argon2 = { version = "0.5.3", features = ["password-hash"] }
+rsa = "0.9.7"
+chacha20poly1305 = "0.10.1"

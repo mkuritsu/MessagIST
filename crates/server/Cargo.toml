@@ -1,0 +1,20 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.22"
+sqlx = { version = "0.8.2", features = [
+    "macros",
+    "postgres",
+    "runtime-tokio",
+    "tls-native-tls",
+] }
+protocol = { path = "../protocol" }
+cryptolib = { path = "../cryptolib" }
+rocket = { version = "0.5.1", features = ["tls", "json", "secrets"] }
+serde = { version = "1.0.215", features = ["derive"] }
+rocket_ws = "0.1.1"
+deadqueue = "0.2.4"
+serde_json = "1.0.133"
